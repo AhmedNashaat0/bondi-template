@@ -1,0 +1,173 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn {
+  background-color: var(--red-color);
+  border: none;
+  color: var(--yellow-color);
+}
+.main-btn:hover {
+  color: #fff;
+}
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--green-color);
+}
+.search {
+  border-left: 1px solid var(--green-color);
+  cursor: pointer;
+}
+.search svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  border-color: white;
+  font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  bottom: -20px;
+  background-color: var(--green-color);
+}
+
+.features .icon-holder {
+  height: 200px;
+}
+.icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon-holder .number {
+  color: var(--section-color);
+  height: 200px;
+}
+.icon-holder .pen {
+  color: var(--green-color);
+  height: 60px;
+}
+.features h3 {
+  color: var(--yellow-color);
+}
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+.our-work ul .active {
+  background-color: red;
+  color: #ffc400;
+}
+.our-work .box {
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.our-work .box::after {
+  content: "Application";
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  background-color: #33d1cc62;
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-work .box:hover::after {
+  transform: translateX(0);
+}
+.about-us .description {
+  max-width: 500px;
+  font-weight: bold;
+}
+.team {
+  background-color: var(--section-color);
+}
+.team .content h2 {
+  color: var(--yellow-color);
+  font-weight: bolder;
+}
+.team .box h4 {
+  background-color: var(--green-color);
+  color: #fff;
+  font-size: 18px;
+}
+.project {
+  background-color: var(--dark-color);
+}
+.project .text-content h2,
+p {
+  color: #fff;
+}
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe .btn {
+  background-color: var(--dark-color);
+  width: 100px;
+  color: var(--yellow-color);
+}
+.subscribe .text {
+  border: 0;
+  border-bottom: 1px;
+  border-color: white;
+  border-style: solid;
+  background-color: transparent;
+  color: white;
+  outline-style: none;
+}
+.subscribe .text::-webkit-input-placeholder {
+  color: white;
+}
+.footer {
+  background-color: var(--dark-color);
+}
+.footer ul {
+  list-style: none;
+  color: #fff;
+}
+.footer ul svg {
+  width: 30px;
+  height: 30px;
+}
